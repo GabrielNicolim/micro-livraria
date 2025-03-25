@@ -18,6 +18,25 @@
                 </div>
             </div>
         </section>
+        <div class="book-container">
+            <h1>Busca de Produto</h1>
+            
+            <div class="field" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <label class="label">ID do produto</label>
+                <div class="control" style="max-width: 400px;">
+                    <input class="input" type="text" id="productId" placeholder="Digite o ID do produto" />
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary" onclick="searchProduct()">Buscar</button>
+                </div>
+            </div>
+
+            <div id="productInfo" class="product-info" style="padding: 10px;"></div>
+            <div id="errorMessage" class="error" style="padding: 10px;"></div>
+        </div>
         <div class="box cta">
             <p class="has-text-centered">Uma simples livraria utilizando microservices</p>
         </div>
